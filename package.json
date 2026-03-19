@@ -1,6 +1,6 @@
 {
   "name": "@brightchain/brighthub-lib",
-  "version": "0.29.8",
+  "version": "0.29.24",
   "type": "commonjs",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "@awesome.me/kit-a20d532681": "^1.0.23",
-    "@digitaldefiance/i18n-lib": "^4.6.4",
+    "@digitaldefiance/i18n-lib": "4.7.2",
+    "@fortawesome/fontawesome-common-types": "^7.2.0",
     "known-css-properties": "^0.34.0",
     "markdown-it": "^14.1.1",
     "markdown-it-abbr": "^2.0.0",
@@ -35,5 +36,10 @@
     "@types/markdown-it": "^14.1.2",
     "@types/sanitize-html": "^2.16.0",
     "@types/uuid": "^11.0.0"
+  },
+  "scripts": {
+    "build": "npx nx build brighthub-lib",
+    "test": "npx nx test brighthub-lib",
+    "lint": "npx nx lint brighthub-lib"
   }
 }

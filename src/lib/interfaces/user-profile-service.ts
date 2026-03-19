@@ -152,8 +152,13 @@ export interface IUserProfileService {
    * Idempotent — does nothing if the profile already exists.
    * @param userId ID of the user
    * @param username Username for the profile
+   * @param displayName Optional display name for the profile
    */
-  createProfileForUser(userId: string, username: string): Promise<void>;
+  createProfileForUser(
+    userId: string,
+    username: string,
+    displayName?: string,
+  ): Promise<void>;
 
   // ═══════════════════════════════════════════════════════
   // Follow Operations (Requirements 4.1-4.6)
@@ -275,6 +280,7 @@ export interface IUserProfileService {
   getProfile(
     userId: string,
     requesterId?: string,
+    usernameHint?: string,
   ): Promise<IBaseUserProfile<string>>;
 
   /**
@@ -437,4 +443,19 @@ export interface IUserProfileService {
     userId: string,
     settings: Partial<IBasePrivacySettings>,
   ): Promise<IBasePrivacySettings>;
+
+  // ═══════════════════════════════════════════════════════
+  // Search
+  // ═══════════════════════════════════════════════════════
+
+  /**
+   * Search for user profiles by username or display name
+   * @param query Search query string
+   * @param options Pagination options
+   * @returns Paginated list of matching user profiles
+   */
+  searchUsers(
+    query: string,
+    options?: IPaginationOptions,
+  ): Promise<IPaginatedResult<IBaseUserProfile<string>>>;
 }

@@ -14,6 +14,10 @@ export interface ITimelineOptions {
   categoryId?: string;
   /** Whether to exclude muted users' posts */
   excludeMuted?: boolean;
+  /** Sort order: 'new' (default, reverse chronological), 'hot' (score decay), 'top' (most liked), 'controversial' (high engagement, balanced votes) */
+  sort?: 'new' | 'hot' | 'top' | 'controversial';
+  /** Time window for 'top' sort: 'day', 'week', 'month', 'all' (default 'week') */
+  topWindow?: 'day' | 'week' | 'month' | 'all';
 }
 
 /**
@@ -151,5 +155,18 @@ export interface IFeedService {
     categoryId: string,
     userId: string,
     options?: ITimelineOptions,
+  ): Promise<ITimelineResult>;
+
+  /**
+   * Get posts within a specific hub, with sort support
+   * @param hubId ID of the hub
+   * @param options Timeline options (pagination, sorting)
+   * @param requestingUserId Optional ID of the requesting user
+   * @returns Timeline result with posts, cursor, and hasMore flag
+   */
+  getHubFeed(
+    hubId: string,
+    options?: ITimelineOptions,
+    requestingUserId?: string,
   ): Promise<ITimelineResult>;
 }

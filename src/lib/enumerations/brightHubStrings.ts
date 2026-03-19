@@ -505,6 +505,72 @@ export const BrightHubStrings = createI18nStringKeys(BrightHubComponentId, {
   NotificationCategoryFilter_Connections:
     'NotificationCategoryFilter_Connections',
   NotificationCategoryFilter_System: 'NotificationCategoryFilter_System',
+
+  // Navigation / Sidebar
+  Nav_Home: 'Nav_Home',
+  Nav_Explore: 'Nav_Explore',
+  Nav_Notifications: 'Nav_Notifications',
+  Nav_Messages: 'Nav_Messages',
+  Nav_Profile: 'Nav_Profile',
+  Nav_Connections: 'Nav_Connections',
+  Nav_Settings: 'Nav_Settings',
+  Nav_SidebarLabel: 'Nav_SidebarLabel',
+  Nav_SubscribedHubs: 'Nav_SubscribedHubs',
+  Nav_CreateHub: 'Nav_CreateHub',
+
+  // Hub Detail Page
+  HubDetail_MembersTemplate: 'HubDetail_MembersTemplate',
+  HubDetail_PostsTemplate: 'HubDetail_PostsTemplate',
+  HubDetail_Join: 'HubDetail_Join',
+  HubDetail_Leave: 'HubDetail_Leave',
+  HubDetail_Joined: 'HubDetail_Joined',
+  HubDetail_TrustOpen: 'HubDetail_TrustOpen',
+  HubDetail_TrustVerified: 'HubDetail_TrustVerified',
+  HubDetail_TrustEncrypted: 'HubDetail_TrustEncrypted',
+  HubDetail_About: 'HubDetail_About',
+  HubDetail_Rules: 'HubDetail_Rules',
+  HubDetail_SortHot: 'HubDetail_SortHot',
+  HubDetail_SortNew: 'HubDetail_SortNew',
+  HubDetail_SortTop: 'HubDetail_SortTop',
+  HubDetail_EmptyState: 'HubDetail_EmptyState',
+  HubDetail_SubHubs: 'HubDetail_SubHubs',
+
+  // Explore Hubs Page
+  Explore_Title: 'Explore_Title',
+  Explore_SearchPlaceholder: 'Explore_SearchPlaceholder',
+  Explore_Trending: 'Explore_Trending',
+  Explore_New: 'Explore_New',
+  Explore_EmptyState: 'Explore_EmptyState',
+  Explore_NoResults: 'Explore_NoResults',
+
+  // Home Page Sections
+  Home_TrendingHubs: 'Home_TrendingHubs',
+  Home_RecentActivity: 'Home_RecentActivity',
+  Home_YourHubs: 'Home_YourHubs',
+  Home_SuggestedHubs: 'Home_SuggestedHubs',
+  Home_ViewAll: 'Home_ViewAll',
+  Home_Welcome: 'Home_Welcome',
+  Home_WelcomeSubtitle: 'Home_WelcomeSubtitle',
+  Home_NoHubsYet: 'Home_NoHubsYet',
+  Home_NoHubsHint: 'Home_NoHubsHint',
+
+  // Create Hub Page
+  CreateHub_Title: 'CreateHub_Title',
+  CreateHub_NameLabel: 'CreateHub_NameLabel',
+  CreateHub_NamePlaceholder: 'CreateHub_NamePlaceholder',
+  CreateHub_SlugLabel: 'CreateHub_SlugLabel',
+  CreateHub_SlugPlaceholder: 'CreateHub_SlugPlaceholder',
+  CreateHub_DescriptionLabel: 'CreateHub_DescriptionLabel',
+  CreateHub_DescriptionPlaceholder: 'CreateHub_DescriptionPlaceholder',
+  CreateHub_TrustTierLabel: 'CreateHub_TrustTierLabel',
+  CreateHub_ParentHubLabel: 'CreateHub_ParentHubLabel',
+  CreateHub_ParentHubNone: 'CreateHub_ParentHubNone',
+  CreateHub_Submit: 'CreateHub_Submit',
+  CreateHub_Cancel: 'CreateHub_Cancel',
+
+  // Sidebar extras
+  Nav_CreatePost: 'Nav_CreatePost',
+  Nav_Trending: 'Nav_Trending',
 } as const);
 
 export type BrightHubStringKey = BrandedStringKeyValue<typeof BrightHubStrings>;

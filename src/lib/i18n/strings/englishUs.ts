@@ -529,4 +529,75 @@ export const BrightHubAmericanEnglishStrings: StringsCollection<BrightHubStringK
     [BrightHubStrings.NotificationCategoryFilter_Messages]: 'Messages',
     [BrightHubStrings.NotificationCategoryFilter_Connections]: 'Connections',
     [BrightHubStrings.NotificationCategoryFilter_System]: 'System',
+
+    // Navigation / Sidebar
+    [BrightHubStrings.Nav_Home]: 'Home',
+    [BrightHubStrings.Nav_Explore]: 'Explore',
+    [BrightHubStrings.Nav_Notifications]: 'Notifications',
+    [BrightHubStrings.Nav_Messages]: 'Messages',
+    [BrightHubStrings.Nav_Profile]: 'Profile',
+    [BrightHubStrings.Nav_Connections]: 'Connections',
+    [BrightHubStrings.Nav_Settings]: 'Settings',
+    [BrightHubStrings.Nav_SidebarLabel]: 'BrightHub navigation',
+    [BrightHubStrings.Nav_SubscribedHubs]: 'Your Hubs',
+    [BrightHubStrings.Nav_CreateHub]: 'Create Hub',
+
+    // Hub Detail Page
+    [BrightHubStrings.HubDetail_MembersTemplate]: '{COUNT} members',
+    [BrightHubStrings.HubDetail_PostsTemplate]: '{COUNT} posts',
+    [BrightHubStrings.HubDetail_Join]: 'Join',
+    [BrightHubStrings.HubDetail_Leave]: 'Leave',
+    [BrightHubStrings.HubDetail_Joined]: 'Joined',
+    [BrightHubStrings.HubDetail_TrustOpen]: 'Open',
+    [BrightHubStrings.HubDetail_TrustVerified]: 'Verified',
+    [BrightHubStrings.HubDetail_TrustEncrypted]: 'Encrypted',
+    [BrightHubStrings.HubDetail_About]: 'About',
+    [BrightHubStrings.HubDetail_Rules]: 'Rules',
+    [BrightHubStrings.HubDetail_SortHot]: 'Hot',
+    [BrightHubStrings.HubDetail_SortNew]: 'New',
+    [BrightHubStrings.HubDetail_SortTop]: 'Top',
+    [BrightHubStrings.HubDetail_EmptyState]:
+      'No posts yet. Be the first to start a discussion!',
+    [BrightHubStrings.HubDetail_SubHubs]: 'Sub-hubs',
+
+    // Explore Hubs Page
+    [BrightHubStrings.Explore_Title]: 'Explore Hubs',
+    [BrightHubStrings.Explore_SearchPlaceholder]: 'Search hubs…',
+    [BrightHubStrings.Explore_Trending]: 'Trending',
+    [BrightHubStrings.Explore_New]: 'New',
+    [BrightHubStrings.Explore_EmptyState]:
+      'No hubs yet. Create one to get started!',
+    [BrightHubStrings.Explore_NoResults]: 'No hubs match your search.',
+
+    // Home Page Sections
+    [BrightHubStrings.Home_TrendingHubs]: 'Trending Hubs',
+    [BrightHubStrings.Home_RecentActivity]: 'Recent Activity',
+    [BrightHubStrings.Home_YourHubs]: 'Your Hubs',
+    [BrightHubStrings.Home_SuggestedHubs]: 'Suggested Hubs',
+    [BrightHubStrings.Home_ViewAll]: 'View all',
+    [BrightHubStrings.Home_Welcome]: 'Welcome to BrightHub',
+    [BrightHubStrings.Home_WelcomeSubtitle]:
+      'Join hubs to see discussions from communities you care about.',
+    [BrightHubStrings.Home_NoHubsYet]: "You haven't joined any hubs yet",
+    [BrightHubStrings.Home_NoHubsHint]:
+      'Explore hubs to find communities that interest you.',
+
+    // Create Hub Page
+    [BrightHubStrings.CreateHub_Title]: 'Create a Hub',
+    [BrightHubStrings.CreateHub_NameLabel]: 'Hub name',
+    [BrightHubStrings.CreateHub_NamePlaceholder]: 'e.g. Programming',
+    [BrightHubStrings.CreateHub_SlugLabel]: 'URL slug',
+    [BrightHubStrings.CreateHub_SlugPlaceholder]: 'e.g. programming',
+    [BrightHubStrings.CreateHub_DescriptionLabel]: 'Description',
+    [BrightHubStrings.CreateHub_DescriptionPlaceholder]:
+      'What is this hub about?',
+    [BrightHubStrings.CreateHub_TrustTierLabel]: 'Trust tier',
+    [BrightHubStrings.CreateHub_ParentHubLabel]: 'Parent hub (optional)',
+    [BrightHubStrings.CreateHub_ParentHubNone]: 'None (top-level hub)',
+    [BrightHubStrings.CreateHub_Submit]: 'Create Hub',
+    [BrightHubStrings.CreateHub_Cancel]: 'Cancel',
+
+    // Sidebar extras
+    [BrightHubStrings.Nav_CreatePost]: 'New Post',
+    [BrightHubStrings.Nav_Trending]: 'Trending',
   };

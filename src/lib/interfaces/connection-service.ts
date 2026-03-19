@@ -658,7 +658,14 @@ export interface IConnectionService {
    * @throws ConnectionServiceError if hub limit exceeded or name invalid
    * @see Requirements: 30.1, 30.9
    */
-  createHub(ownerId: string, name: string): Promise<IBaseHub<string>>;
+  createHub(ownerId: string, name: string, options?: {
+    slug?: string;
+    description?: string;
+    rules?: string;
+    trustTier?: string;
+    parentHubId?: string;
+    icon?: string;
+  }): Promise<IBaseHub<string>>;
 
   /**
    * Delete a hub and all its memberships.
@@ -722,6 +729,103 @@ export interface IConnectionService {
    * @see Requirements: 30.6
    */
   getOrCreateDefaultHub(ownerId: string): Promise<IBaseHub<string>>;
+
+  /**
+   * Get a hub by its URL slug
+   */
+  getHubBySlug(slug: string): Promise<IBaseHub<string> | null>;
+
+  /**
+   * Get a hub by ID or slug
+   */
+  getHubByIdOrSlug(idOrSlug: string): Promise<IBaseHub<string> | null>;
+
+  /**
+   * Explore public hubs with optional search and sorting
+   */
+  exploreHubs(options?: {
+    sort?: 'trending' | 'new' | 'suggested';
+    query?: string;
+    limit?: number;
+    userId?: string;
+  }): Promise<IBaseHub<string>[]>;
+
+  /**
+   * Self-service join a hub
+   */
+  joinHub(hubId: string, userId: string): Promise<void>;
+
+  /**
+   * Self-service leave a hub
+   */
+  leaveHub(hubId: string, userId: string): Promise<void>;
+
+  /**
+   * Update hub settings (owner or moderator only)
+   */
+  updateHub(
+    hubId: string,
+    userId: string,
+    updates: {
+      name?: string;
+      description?: string;
+      rules?: string;
+      trustTier?: string;
+      icon?: string;
+    },
+  ): Promise<IBaseHub<string>>;
+
+  /**
+   * Add a moderator to a hub (owner only)
+   */
+  addModerator(hubId: string, ownerId: string, userId: string): Promise<void>;
+
+  /**
+   * Remove a moderator from a hub (owner only)
+   */
+  removeModerator(hubId: string, ownerId: string, userId: string): Promise<void>;
+
+  /**
+   * Check if a user is a member of a hub
+   */
+  isHubMember(hubId: string, userId: string): Promise<boolean>;
+
+  /**
+   * Get all hubs a user is a member of (subscribed hubs)
+   */
+  getUserSubscribedHubs(userId: string): Promise<IBaseHub<string>[]>;
+
+  /**
+   * Get sub-hubs of a parent hub
+   */
+  getSubHubs(parentHubId: string): Promise<IBaseHub<string>[]>;
+
+  /**
+   * Remove a post from a hub (moderator action)
+   */
+  removePostFromHub(
+    hubId: string,
+    postId: string,
+    moderatorId: string,
+  ): Promise<void>;
+
+  /**
+   * Ban a user from a hub (moderator action)
+   */
+  banFromHub(
+    hubId: string,
+    userId: string,
+    moderatorId: string,
+  ): Promise<void>;
+
+  /**
+   * Transfer hub ownership to another user
+   */
+  transferHubOwnership(
+    hubId: string,
+    currentOwnerId: string,
+    newOwnerId: string,
+  ): Promise<IBaseHub<string>>;
 
   // ── Mutual Connections ──────────────────────────────────────────────
 
