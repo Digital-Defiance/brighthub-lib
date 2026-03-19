@@ -34,6 +34,12 @@ export interface IBasePostData<TId> {
   replyCount: number;
   /** Number of quote posts */
   quoteCount: number;
+  /** Upvote count (for hub posts with voting) */
+  upvoteCount?: number;
+  /** Downvote count (for hub posts with voting) */
+  downvoteCount?: number;
+  /** Net score (upvotes - downvotes) */
+  score?: number;
   /** Whether the post has been edited */
   isEdited: boolean;
   /** Timestamp when the post was edited */

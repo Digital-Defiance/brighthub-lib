@@ -190,4 +190,14 @@ export interface IPostService {
     postId: string,
     userId: string,
   ): Promise<IInteractionStatus>;
+
+  /**
+   * Upvote a post (for hub posts with voting)
+   */
+  upvotePost(postId: string, userId: string): Promise<void>;
+
+  /**
+   * Downvote a post (for hub posts with voting)
+   */
+  downvotePost(postId: string, userId: string): Promise<void>;
 }

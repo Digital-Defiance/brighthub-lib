@@ -9,8 +9,8 @@ import {
   BrightHubComponentId,
   BrightHubStrings,
 } from '../enumerations/brightHubStrings';
-import { BrightHubAmericanEnglishStrings } from './strings/englishUs';
 import { BrightHubBritishEnglishStrings } from './strings/englishUK';
+import { BrightHubAmericanEnglishStrings } from './strings/englishUs';
 import { BrightHubFrenchStrings } from './strings/french';
 import { BrightHubGermanStrings } from './strings/german';
 import { BrightHubJapaneseStrings } from './strings/japanese';

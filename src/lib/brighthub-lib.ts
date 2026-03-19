@@ -1,4 +1,5 @@
-/// <reference path="./markdown-it-plugins.d.ts" />
+// eslint-disable-next-line @typescript-eslint/triple-slash-reference
+/// <reference path="../markdown-it-plugins.d.ts" />
 import MarkdownIt from 'markdown-it';
 import markdownItAbbr from 'markdown-it-abbr';
 import markdownItContainer from 'markdown-it-container';

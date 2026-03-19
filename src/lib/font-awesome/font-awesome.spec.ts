@@ -495,9 +495,7 @@ describe('font-awesome', () => {
 
   describe('stripIconMarkup', () => {
     it('should strip simple icon markup', () => {
-      expect(stripIconMarkup('Hello {{heart}} World')).toBe(
-        'Hello World',
-      );
+      expect(stripIconMarkup('Hello {{heart}} World')).toBe('Hello World');
     });
 
     it('should strip icon markup with style', () => {
@@ -915,9 +913,7 @@ describe('font-awesome', () => {
       ).toBe(true);
       // Invalid: second declaration has bad property
       expect(
-        isValidIconMarkup(
-          '{{solid heart; color: red; fake-property: 20px;}}',
-        ),
+        isValidIconMarkup('{{solid heart; color: red; fake-property: 20px;}}'),
       ).toBe(false);
       // Invalid: third declaration has disallowed property
       expect(
@@ -1012,15 +1008,15 @@ describe('font-awesome', () => {
       // The colorRegex allows any all-alpha string as a named color,
       // so we test with non-alpha values that would have matched the
       // old broken valueRegex due to operator precedence
-      expect(
-        isValidIconMarkup('{{solid heart; color: 123auto456;}}'),
-      ).toBe(false);
-      expect(
-        isValidIconMarkup('{{solid heart; color: 99inherit;}}'),
-      ).toBe(false);
-      expect(
-        isValidIconMarkup('{{solid heart; color: initial99;}}'),
-      ).toBe(false);
+      expect(isValidIconMarkup('{{solid heart; color: 123auto456;}}')).toBe(
+        false,
+      );
+      expect(isValidIconMarkup('{{solid heart; color: 99inherit;}}')).toBe(
+        false,
+      );
+      expect(isValidIconMarkup('{{solid heart; color: initial99;}}')).toBe(
+        false,
+      );
     });
 
     it('should accept exact keyword values', () => {
