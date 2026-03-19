@@ -115,6 +115,7 @@ export interface ClientToServerEvents {
  * Currently empty but reserved for future multi-node deployments.
  */
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface InterServerEvents {
   // Reserved for future multi-node scaling
 }
