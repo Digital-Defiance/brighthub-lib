@@ -1,10 +1,10 @@
-import { StringsCollection } from '@digitaldefiance/i18n-lib';
+import { ComponentStrings } from '@digitaldefiance/i18n-lib';
 import {
   BrightHubStringKey,
   BrightHubStrings,
 } from '../../enumerations/brightHubStrings';
 
-export const BrightHubAmericanEnglishStrings: StringsCollection<BrightHubStringKey> =
+export const BrightHubAmericanEnglishStrings: ComponentStrings<BrightHubStringKey> =
   {
     // PostCard
     [BrightHubStrings.PostCard_Reposted]: 'Reposted',

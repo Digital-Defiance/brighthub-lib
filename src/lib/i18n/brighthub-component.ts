@@ -1,8 +1,8 @@
 import {
-  BrandedMasterStringsCollection,
   ComponentConfig,
   CoreLanguageCode,
   LanguageCodes,
+  RequiredBrandedMasterStringsCollection,
   type I18nComponentPackage,
 } from '@digitaldefiance/i18n-lib';
 import {
@@ -18,7 +18,7 @@ import { BrightHubMandarinStrings } from './strings/mandarin';
 import { BrightHubSpanishStrings } from './strings/spanish';
 import { BrightHubUkrainianStrings } from './strings/ukrainian';
 
-export const BrightHubComponentStrings: BrandedMasterStringsCollection<
+export const BrightHubComponentStrings: RequiredBrandedMasterStringsCollection<
   typeof BrightHubStrings,
   CoreLanguageCode
 > = {

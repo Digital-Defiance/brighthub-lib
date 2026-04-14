@@ -1,10 +1,10 @@
-import { StringsCollection } from '@digitaldefiance/i18n-lib';
+import { ComponentStrings } from '@digitaldefiance/i18n-lib';
 import {
   BrightHubStringKey,
   BrightHubStrings,
 } from '../../enumerations/brightHubStrings';
 
-export const BrightHubSpanishStrings: StringsCollection<BrightHubStringKey> = {
+export const BrightHubSpanishStrings: ComponentStrings<BrightHubStringKey> = {
   // PostCard
   [BrightHubStrings.PostCard_Reposted]: 'Republicado',
   [BrightHubStrings.PostCard_Edited]: 'Editado',
@@ -38,6 +38,15 @@ export const BrightHubSpanishStrings: StringsCollection<BrightHubStringKey> = {
   [BrightHubStrings.PostComposer_SubmitPost]: 'Enviar publicación',
   [BrightHubStrings.PostComposer_Post]: 'Publicar',
   [BrightHubStrings.PostComposer_Reply]: 'Responder',
+  [BrightHubStrings.PostComposer_Preview]: 'Vista previa',
+  [BrightHubStrings.PostComposer_PreviewAriaLabel]:
+    'Vista previa del contenido de la publicación',
+  [BrightHubStrings.PostComposer_MarkupHelp]: 'Ayuda de formato',
+  [BrightHubStrings.PostComposer_MarkupHelpAriaLabel]:
+    'Referencia de formato y marcado de publicaciones',
+  [BrightHubStrings.PostComposer_MarkupHelpClose]: 'Cerrar',
+  [BrightHubStrings.PostComposer_MarkupHelpTabPost]: 'Formato de publicación',
+  [BrightHubStrings.PostComposer_MarkupHelpTabIcons]: 'Marcado de iconos',
 
   // Timeline
   [BrightHubStrings.Timeline_AriaLabel]: 'Línea de tiempo',
@@ -107,6 +116,240 @@ export const BrightHubSpanishStrings: StringsCollection<BrightHubStringKey> = {
   [BrightHubStrings.SearchResults_SectionPosts]: 'Publicaciones',
   [BrightHubStrings.SearchResults_Loading]: 'Cargando resultados de búsqueda',
   [BrightHubStrings.SearchResults_EndOfResults]: 'Fin de los resultados',
+
+  // ConnectionListManager
+  [BrightHubStrings.ConnectionListManager_Title]: 'Listas de conexiones',
+  [BrightHubStrings.ConnectionListManager_CreateList]: 'Crear lista',
+  [BrightHubStrings.ConnectionListManager_EditList]: 'Editar lista',
+  [BrightHubStrings.ConnectionListManager_DeleteList]: 'Eliminar lista',
+  [BrightHubStrings.ConnectionListManager_DeleteConfirmTemplate]:
+    '¿Estás seguro de que deseas eliminar "{NAME}"? Se eliminarán todos los miembros.',
+  [BrightHubStrings.ConnectionListManager_DeleteConfirmAction]: 'Eliminar',
+  [BrightHubStrings.ConnectionListManager_Cancel]: 'Cancelar',
+  [BrightHubStrings.ConnectionListManager_Save]: 'Guardar',
+  [BrightHubStrings.ConnectionListManager_ListName]: 'Nombre de la lista',
+  [BrightHubStrings.ConnectionListManager_ListDescription]: 'Descripción',
+  [BrightHubStrings.ConnectionListManager_Visibility]: 'Visibilidad',
+  [BrightHubStrings.ConnectionListManager_VisibilityPrivate]: 'Privada',
+  [BrightHubStrings.ConnectionListManager_VisibilityFollowersOnly]:
+    'Solo seguidores',
+  [BrightHubStrings.ConnectionListManager_VisibilityPublic]: 'Pública',
+  [BrightHubStrings.ConnectionListManager_MembersTemplate]: '{COUNT} miembros',
+  [BrightHubStrings.ConnectionListManager_FollowersTemplate]:
+    '{COUNT} seguidores',
+  [BrightHubStrings.ConnectionListManager_EmptyState]:
+    'Aún no hay listas de conexiones',
+  [BrightHubStrings.ConnectionListManager_EmptyStateHint]:
+    'Crea una lista para organizar tus conexiones.',
+  [BrightHubStrings.ConnectionListManager_AddMembers]: 'Agregar miembros',
+  [BrightHubStrings.ConnectionListManager_RemoveMembers]: 'Eliminar miembros',
+  [BrightHubStrings.ConnectionListManager_AddMembersTitle]:
+    'Agregar miembros a la lista',
+  [BrightHubStrings.ConnectionListManager_RemoveMembersTitle]:
+    'Eliminar miembros de la lista',
+  [BrightHubStrings.ConnectionListManager_UserIdsPlaceholder]:
+    'Ingresa IDs de usuario, uno por línea',
+  [BrightHubStrings.ConnectionListManager_Loading]: 'Cargando listas…',
+  [BrightHubStrings.ConnectionListManager_AriaLabel]:
+    'Gestor de listas de conexiones',
+
+  // ConnectionListCard
+  [BrightHubStrings.ConnectionListCard_AriaLabel]:
+    'Lista de conexiones: {NAME}',
+  [BrightHubStrings.ConnectionListCard_MembersTemplate]: '{COUNT} miembros',
+  [BrightHubStrings.ConnectionListCard_FollowersTemplate]: '{COUNT} seguidores',
+  [BrightHubStrings.ConnectionListCard_VisibilityPrivate]: 'Privada',
+  [BrightHubStrings.ConnectionListCard_VisibilityFollowersOnly]:
+    'Solo seguidores',
+  [BrightHubStrings.ConnectionListCard_VisibilityPublic]: 'Pública',
+  [BrightHubStrings.ConnectionListCard_CreatedAtTemplate]: 'Creada {DATE}',
+
+  // ConnectionCategorySelector
+  [BrightHubStrings.ConnectionCategorySelector_Title]: 'Categorías',
+  [BrightHubStrings.ConnectionCategorySelector_AriaLabel]:
+    'Selector de categoría de conexión',
+  [BrightHubStrings.ConnectionCategorySelector_DefaultIndicator]:
+    'Predeterminada',
+  [BrightHubStrings.ConnectionCategorySelector_NoneAvailable]:
+    'No hay categorías disponibles',
+
+  // ConnectionNoteEditor
+  [BrightHubStrings.ConnectionNoteEditor_Title]: 'Nota',
+  [BrightHubStrings.ConnectionNoteEditor_AriaLabel]: 'Nota de conexión',
+  [BrightHubStrings.ConnectionNoteEditor_Placeholder]:
+    'Agrega una nota privada sobre esta conexión…',
+  [BrightHubStrings.ConnectionNoteEditor_EmptyState]:
+    'Aún no hay nota. Agrega una nota privada para recordar el contexto de esta conexión.',
+  [BrightHubStrings.ConnectionNoteEditor_Save]: 'Guardar',
+  [BrightHubStrings.ConnectionNoteEditor_Delete]: 'Eliminar',
+  [BrightHubStrings.ConnectionNoteEditor_Cancel]: 'Cancelar',
+  [BrightHubStrings.ConnectionNoteEditor_DeleteConfirmTitle]: '¿Eliminar nota?',
+  [BrightHubStrings.ConnectionNoteEditor_DeleteConfirmMessage]:
+    '¿Estás seguro de que deseas eliminar esta nota? Esta acción no se puede deshacer.',
+  [BrightHubStrings.ConnectionNoteEditor_DeleteConfirmAction]: 'Eliminar',
+
+  // ConnectionSuggestions
+  [BrightHubStrings.ConnectionSuggestions_Title]: 'Conexiones sugeridas',
+  [BrightHubStrings.ConnectionSuggestions_AriaLabel]:
+    'Sugerencias de conexiones',
+  [BrightHubStrings.ConnectionSuggestions_EmptyState]:
+    'No hay sugerencias por ahora. ¡Vuelve más tarde!',
+  [BrightHubStrings.ConnectionSuggestions_Loading]: 'Cargando sugerencias…',
+  [BrightHubStrings.ConnectionSuggestions_Follow]: 'Seguir',
+  [BrightHubStrings.ConnectionSuggestions_Dismiss]: 'Descartar',
+  [BrightHubStrings.ConnectionSuggestions_MutualCountSingular]:
+    '1 conexión mutua',
+  [BrightHubStrings.ConnectionSuggestions_MutualCountPluralTemplate]:
+    '{COUNT} conexiones mutuas',
+  [BrightHubStrings.ConnectionSuggestions_ReasonMutualConnections]:
+    'Basado en conexiones mutuas',
+  [BrightHubStrings.ConnectionSuggestions_ReasonSimilarInterests]:
+    'Basado en intereses similares',
+  [BrightHubStrings.ConnectionSuggestions_ReasonSimilarToUser]:
+    'Similar a personas que sigues',
+
+  // MutualConnections
+  [BrightHubStrings.MutualConnections_Title]: 'Conexiones mutuas',
+  [BrightHubStrings.MutualConnections_AriaLabel]: 'Conexiones mutuas',
+  [BrightHubStrings.MutualConnections_Loading]: 'Cargando conexiones mutuas…',
+  [BrightHubStrings.MutualConnections_EmptyState]: 'No hay conexiones mutuas',
+  [BrightHubStrings.MutualConnections_CountSingular]: '1 conexión mutua',
+  [BrightHubStrings.MutualConnections_CountPluralTemplate]:
+    '{COUNT} conexiones mutuas',
+  [BrightHubStrings.MutualConnections_LoadMore]: 'Cargar más',
+
+  // ConnectionStrengthIndicator
+  [BrightHubStrings.ConnectionStrengthIndicator_Title]: 'Fuerza de la conexión',
+  [BrightHubStrings.ConnectionStrengthIndicator_AriaLabel]:
+    'Indicador de fuerza de conexión',
+  [BrightHubStrings.ConnectionStrengthIndicator_Strong]: 'Fuerte',
+  [BrightHubStrings.ConnectionStrengthIndicator_Moderate]: 'Moderada',
+  [BrightHubStrings.ConnectionStrengthIndicator_Weak]: 'Débil',
+  [BrightHubStrings.ConnectionStrengthIndicator_Dormant]: 'Inactiva',
+
+  // HubManager
+  [BrightHubStrings.HubManager_Title]: 'Hubs',
+  [BrightHubStrings.HubManager_AriaLabel]: 'Gestor de hubs',
+  [BrightHubStrings.HubManager_CreateHub]: 'Crear Hub',
+  [BrightHubStrings.HubManager_EditHub]: 'Editar Hub',
+  [BrightHubStrings.HubManager_DeleteHub]: 'Eliminar Hub',
+  [BrightHubStrings.HubManager_HubName]: 'Nombre del hub',
+  [BrightHubStrings.HubManager_HubDescription]: 'Descripción',
+  [BrightHubStrings.HubManager_MembersTemplate]: '{COUNT} miembros',
+  [BrightHubStrings.HubManager_EmptyState]: 'Aún no hay hubs.',
+  [BrightHubStrings.HubManager_EmptyStateHint]:
+    'Crea un hub para compartir contenido con un grupo selecto de conexiones.',
+  [BrightHubStrings.HubManager_Save]: 'Guardar',
+  [BrightHubStrings.HubManager_Cancel]: 'Cancelar',
+  [BrightHubStrings.HubManager_DeleteConfirmTemplate]:
+    '¿Estás seguro de que deseas eliminar "{NAME}"? Se eliminarán todos los miembros.',
+  [BrightHubStrings.HubManager_DeleteConfirmAction]: 'Eliminar',
+  [BrightHubStrings.HubManager_AddMembers]: 'Agregar miembros',
+  [BrightHubStrings.HubManager_AddMembersTitle]: 'Agregar miembros al hub',
+  [BrightHubStrings.HubManager_RemoveMembers]: 'Eliminar miembros',
+  [BrightHubStrings.HubManager_RemoveMembersTitle]: 'Eliminar miembros del hub',
+  [BrightHubStrings.HubManager_UserIdsPlaceholder]:
+    'Ingresa IDs de usuario, uno por línea',
+  [BrightHubStrings.HubManager_Loading]: 'Cargando hubs…',
+  [BrightHubStrings.HubManager_DefaultBadge]: 'Predeterminado',
+
+  // HubSelector
+  [BrightHubStrings.HubSelector_Title]: 'Visibilidad de la publicación',
+  [BrightHubStrings.HubSelector_AriaLabel]:
+    'Selector de hub para visibilidad de publicación',
+  [BrightHubStrings.HubSelector_MembersTemplate]: '{COUNT} miembros',
+  [BrightHubStrings.HubSelector_NoneAvailable]: 'No hay hubs disponibles.',
+  [BrightHubStrings.HubSelector_NoneSelected]:
+    'Visible para todos los seguidores',
+  [BrightHubStrings.HubSelector_SelectedCountTemplate]:
+    '{COUNT} hubs seleccionados',
+  [BrightHubStrings.HubSelector_DefaultBadge]: 'Predeterminado',
+
+  // FollowRequestList
+  [BrightHubStrings.FollowRequestList_Title]: 'Solicitudes de seguimiento',
+  [BrightHubStrings.FollowRequestList_AriaLabel]:
+    'Solicitudes de seguimiento pendientes',
+  [BrightHubStrings.FollowRequestList_Loading]:
+    'Cargando solicitudes de seguimiento…',
+  [BrightHubStrings.FollowRequestList_EmptyState]:
+    'No hay solicitudes de seguimiento pendientes',
+  [BrightHubStrings.FollowRequestList_Approve]: 'Aprobar',
+  [BrightHubStrings.FollowRequestList_Reject]: 'Rechazar',
+  [BrightHubStrings.FollowRequestList_PendingCountTemplate]:
+    '{COUNT} solicitudes pendientes',
+  [BrightHubStrings.FollowRequestList_PendingCountSingular]:
+    '1 solicitud pendiente',
+  [BrightHubStrings.FollowRequestList_CustomMessage]: 'Mensaje',
+
+  // ConnectionPrivacySettings
+  [BrightHubStrings.ConnectionPrivacySettings_Title]:
+    'Configuración de privacidad',
+  [BrightHubStrings.ConnectionPrivacySettings_AriaLabel]:
+    'Configuración de privacidad de conexiones',
+  [BrightHubStrings.ConnectionPrivacySettings_HideFollowerCount]:
+    'Ocultar cantidad de seguidores',
+  [BrightHubStrings.ConnectionPrivacySettings_HideFollowingCount]:
+    'Ocultar cantidad de seguidos',
+  [BrightHubStrings.ConnectionPrivacySettings_HideFollowersFromNonFollowers]:
+    'Ocultar seguidores a quienes no te siguen',
+  [BrightHubStrings.ConnectionPrivacySettings_HideFollowingFromNonFollowers]:
+    'Ocultar seguidos a quienes no te siguen',
+  [BrightHubStrings.ConnectionPrivacySettings_AllowDmsFromNonFollowers]:
+    'Permitir mensajes directos de quienes no te siguen',
+  [BrightHubStrings.ConnectionPrivacySettings_ShowOnlineStatus]:
+    'Mostrar estado en línea',
+  [BrightHubStrings.ConnectionPrivacySettings_ShowReadReceipts]:
+    'Mostrar confirmaciones de lectura',
+  [BrightHubStrings.ConnectionPrivacySettings_ApproveFollowersMode]:
+    'Modo de aprobación de seguidores',
+  [BrightHubStrings.ConnectionPrivacySettings_ApproveNone]:
+    'Aprobar todos automáticamente',
+  [BrightHubStrings.ConnectionPrivacySettings_ApproveAll]:
+    'Requerir aprobación para todos',
+  [BrightHubStrings.ConnectionPrivacySettings_ApproveNonMutuals]:
+    'Requerir aprobación para no mutuos',
+  [BrightHubStrings.ConnectionPrivacySettings_Save]: 'Guardar',
+
+  // TemporaryMuteDialog
+  [BrightHubStrings.TemporaryMuteDialog_Title]: 'Silenciar usuario',
+  [BrightHubStrings.TemporaryMuteDialog_AriaLabel]:
+    'Diálogo de silencio temporal',
+  [BrightHubStrings.TemporaryMuteDialog_MuteUserTemplate]:
+    'Silenciar a {USERNAME}',
+  [BrightHubStrings.TemporaryMuteDialog_Duration1h]: '1 hora',
+  [BrightHubStrings.TemporaryMuteDialog_Duration8h]: '8 horas',
+  [BrightHubStrings.TemporaryMuteDialog_Duration24h]: '24 horas',
+  [BrightHubStrings.TemporaryMuteDialog_Duration7d]: '7 días',
+  [BrightHubStrings.TemporaryMuteDialog_Duration30d]: '30 días',
+  [BrightHubStrings.TemporaryMuteDialog_Permanent]: 'Silenciar permanentemente',
+  [BrightHubStrings.TemporaryMuteDialog_Mute]: 'Silenciar',
+  [BrightHubStrings.TemporaryMuteDialog_Cancel]: 'Cancelar',
+
+  // ConnectionInsights
+  [BrightHubStrings.ConnectionInsights_Title]: 'Estadísticas de conexión',
+  [BrightHubStrings.ConnectionInsights_AriaLabel]: 'Estadísticas de conexión',
+  [BrightHubStrings.ConnectionInsights_Period7d]: '7 días',
+  [BrightHubStrings.ConnectionInsights_Period30d]: '30 días',
+  [BrightHubStrings.ConnectionInsights_Period90d]: '90 días',
+  [BrightHubStrings.ConnectionInsights_PeriodAllTime]: 'Todo el tiempo',
+  [BrightHubStrings.ConnectionInsights_Interactions]: 'Interacciones',
+  [BrightHubStrings.ConnectionInsights_Messages]: 'Mensajes',
+  [BrightHubStrings.ConnectionInsights_Likes]: 'Me gusta',
+  [BrightHubStrings.ConnectionInsights_Reposts]: 'Republicaciones',
+  [BrightHubStrings.ConnectionInsights_Replies]: 'Respuestas',
+  [BrightHubStrings.ConnectionInsights_EmptyState]:
+    'No hay datos de interacción disponibles',
+  [BrightHubStrings.ConnectionInsights_Loading]:
+    'Cargando estadísticas de conexión…',
+
+  // ListTimelineFilter
+  [BrightHubStrings.ListTimelineFilter_Title]: 'Filtrar por lista',
+  [BrightHubStrings.ListTimelineFilter_AriaLabel]:
+    'Filtrar línea de tiempo por lista de conexiones',
+  [BrightHubStrings.ListTimelineFilter_AllConnections]: 'Todas las conexiones',
+  [BrightHubStrings.ListTimelineFilter_SelectList]: 'Seleccionar una lista',
+  [BrightHubStrings.ListTimelineFilter_MembersTemplate]: '({COUNT} miembros)',
+  [BrightHubStrings.ListTimelineFilter_ClearFilter]: 'Borrar filtro',
 
   // MessagingInbox
   [BrightHubStrings.MessagingInbox_Title]: 'Mensajes',
@@ -303,59 +546,64 @@ export const BrightHubSpanishStrings: StringsCollection<BrightHubStringKey> = {
   [BrightHubStrings.NotificationCategoryFilter_Connections]: 'Conexiones',
   [BrightHubStrings.NotificationCategoryFilter_System]: 'Sistema',
 
-    // Navigation / Sidebar
-    [BrightHubStrings.Nav_Home]: 'Inicio',
-    [BrightHubStrings.Nav_Explore]: 'Explorar',
-    [BrightHubStrings.Nav_Notifications]: 'Notificaciones',
-    [BrightHubStrings.Nav_Messages]: 'Mensajes',
-    [BrightHubStrings.Nav_Profile]: 'Perfil',
-    [BrightHubStrings.Nav_Connections]: 'Conexiones',
-    [BrightHubStrings.Nav_Settings]: 'Configuración',
-    [BrightHubStrings.Nav_SidebarLabel]: 'Navegación de BrightHub',
-    [BrightHubStrings.Nav_SubscribedHubs]: 'Tus Hubs',
-    [BrightHubStrings.Nav_CreateHub]: 'Crear Hub',
-    [BrightHubStrings.HubDetail_MembersTemplate]: '{COUNT} miembros',
-    [BrightHubStrings.HubDetail_PostsTemplate]: '{COUNT} publicaciones',
-    [BrightHubStrings.HubDetail_Join]: 'Unirse',
-    [BrightHubStrings.HubDetail_Leave]: 'Salir',
-    [BrightHubStrings.HubDetail_Joined]: 'Unido',
-    [BrightHubStrings.HubDetail_TrustOpen]: 'Abierto',
-    [BrightHubStrings.HubDetail_TrustVerified]: 'Verificado',
-    [BrightHubStrings.HubDetail_TrustEncrypted]: 'Cifrado',
-    [BrightHubStrings.HubDetail_About]: 'Acerca de',
-    [BrightHubStrings.HubDetail_Rules]: 'Reglas',
-    [BrightHubStrings.HubDetail_SortHot]: 'Popular',
-    [BrightHubStrings.HubDetail_SortNew]: 'Nuevo',
-    [BrightHubStrings.HubDetail_SortTop]: 'Mejor',
-    [BrightHubStrings.HubDetail_EmptyState]: '¡Aún no hay publicaciones. Sé el primero en iniciar una discusión!',
-    [BrightHubStrings.HubDetail_SubHubs]: 'Sub-hubs',
-    [BrightHubStrings.Explore_Title]: 'Explorar Hubs',
-    [BrightHubStrings.Explore_SearchPlaceholder]: 'Buscar hubs…',
-    [BrightHubStrings.Explore_Trending]: 'Tendencia',
-    [BrightHubStrings.Explore_New]: 'Nuevo',
-    [BrightHubStrings.Explore_EmptyState]: '¡Aún no hay hubs. Crea uno para empezar!',
-    [BrightHubStrings.Explore_NoResults]: 'Ningún hub coincide con tu búsqueda.',
-    [BrightHubStrings.Home_TrendingHubs]: 'Hubs en tendencia',
-    [BrightHubStrings.Home_RecentActivity]: 'Actividad reciente',
-    [BrightHubStrings.Home_YourHubs]: 'Tus Hubs',
-    [BrightHubStrings.Home_SuggestedHubs]: 'Hubs sugeridos',
-    [BrightHubStrings.Home_ViewAll]: 'Ver todo',
-    [BrightHubStrings.Home_Welcome]: 'Bienvenido a BrightHub',
-    [BrightHubStrings.Home_WelcomeSubtitle]: 'Únete a hubs para ver discusiones de comunidades que te interesan.',
-    [BrightHubStrings.Home_NoHubsYet]: 'Aún no te has unido a ningún hub',
-    [BrightHubStrings.Home_NoHubsHint]: 'Explora hubs para encontrar comunidades que te interesen.',
-    [BrightHubStrings.CreateHub_Title]: 'Crear un Hub',
-    [BrightHubStrings.CreateHub_NameLabel]: 'Nombre del hub',
-    [BrightHubStrings.CreateHub_NamePlaceholder]: 'ej. Programación',
-    [BrightHubStrings.CreateHub_SlugLabel]: 'Slug de URL',
-    [BrightHubStrings.CreateHub_SlugPlaceholder]: 'ej. programacion',
-    [BrightHubStrings.CreateHub_DescriptionLabel]: 'Descripción',
-    [BrightHubStrings.CreateHub_DescriptionPlaceholder]: '¿De qué trata este hub?',
-    [BrightHubStrings.CreateHub_TrustTierLabel]: 'Nivel de confianza',
-    [BrightHubStrings.CreateHub_ParentHubLabel]: 'Hub padre (opcional)',
-    [BrightHubStrings.CreateHub_ParentHubNone]: 'Ninguno (hub principal)',
-    [BrightHubStrings.CreateHub_Submit]: 'Crear Hub',
-    [BrightHubStrings.CreateHub_Cancel]: 'Cancelar',
-    [BrightHubStrings.Nav_CreatePost]: 'Nueva publicación',
-    [BrightHubStrings.Nav_Trending]: 'Tendencia',
+  // Navigation / Sidebar
+  [BrightHubStrings.Nav_Home]: 'Inicio',
+  [BrightHubStrings.Nav_Explore]: 'Explorar',
+  [BrightHubStrings.Nav_Notifications]: 'Notificaciones',
+  [BrightHubStrings.Nav_Messages]: 'Mensajes',
+  [BrightHubStrings.Nav_Profile]: 'Perfil',
+  [BrightHubStrings.Nav_Connections]: 'Conexiones',
+  [BrightHubStrings.Nav_Settings]: 'Configuración',
+  [BrightHubStrings.Nav_SidebarLabel]: 'Navegación de BrightHub',
+  [BrightHubStrings.Nav_SubscribedHubs]: 'Tus Hubs',
+  [BrightHubStrings.Nav_CreateHub]: 'Crear Hub',
+  [BrightHubStrings.HubDetail_MembersTemplate]: '{COUNT} miembros',
+  [BrightHubStrings.HubDetail_PostsTemplate]: '{COUNT} publicaciones',
+  [BrightHubStrings.HubDetail_Join]: 'Unirse',
+  [BrightHubStrings.HubDetail_Leave]: 'Salir',
+  [BrightHubStrings.HubDetail_Joined]: 'Unido',
+  [BrightHubStrings.HubDetail_TrustOpen]: 'Abierto',
+  [BrightHubStrings.HubDetail_TrustVerified]: 'Verificado',
+  [BrightHubStrings.HubDetail_TrustEncrypted]: 'Cifrado',
+  [BrightHubStrings.HubDetail_About]: 'Acerca de',
+  [BrightHubStrings.HubDetail_Rules]: 'Reglas',
+  [BrightHubStrings.HubDetail_SortHot]: 'Popular',
+  [BrightHubStrings.HubDetail_SortNew]: 'Nuevo',
+  [BrightHubStrings.HubDetail_SortTop]: 'Mejor',
+  [BrightHubStrings.HubDetail_EmptyState]:
+    '¡Aún no hay publicaciones. Sé el primero en iniciar una discusión!',
+  [BrightHubStrings.HubDetail_SubHubs]: 'Sub-hubs',
+  [BrightHubStrings.Explore_Title]: 'Explorar Hubs',
+  [BrightHubStrings.Explore_SearchPlaceholder]: 'Buscar hubs…',
+  [BrightHubStrings.Explore_Trending]: 'Tendencia',
+  [BrightHubStrings.Explore_New]: 'Nuevo',
+  [BrightHubStrings.Explore_EmptyState]:
+    '¡Aún no hay hubs. Crea uno para empezar!',
+  [BrightHubStrings.Explore_NoResults]: 'Ningún hub coincide con tu búsqueda.',
+  [BrightHubStrings.Home_TrendingHubs]: 'Hubs en tendencia',
+  [BrightHubStrings.Home_RecentActivity]: 'Actividad reciente',
+  [BrightHubStrings.Home_YourHubs]: 'Tus Hubs',
+  [BrightHubStrings.Home_SuggestedHubs]: 'Hubs sugeridos',
+  [BrightHubStrings.Home_ViewAll]: 'Ver todo',
+  [BrightHubStrings.Home_Welcome]: 'Bienvenido a BrightHub',
+  [BrightHubStrings.Home_WelcomeSubtitle]:
+    'Únete a hubs para ver discusiones de comunidades que te interesan.',
+  [BrightHubStrings.Home_NoHubsYet]: 'Aún no te has unido a ningún hub',
+  [BrightHubStrings.Home_NoHubsHint]:
+    'Explora hubs para encontrar comunidades que te interesen.',
+  [BrightHubStrings.CreateHub_Title]: 'Crear un Hub',
+  [BrightHubStrings.CreateHub_NameLabel]: 'Nombre del hub',
+  [BrightHubStrings.CreateHub_NamePlaceholder]: 'ej. Programación',
+  [BrightHubStrings.CreateHub_SlugLabel]: 'Slug de URL',
+  [BrightHubStrings.CreateHub_SlugPlaceholder]: 'ej. programacion',
+  [BrightHubStrings.CreateHub_DescriptionLabel]: 'Descripción',
+  [BrightHubStrings.CreateHub_DescriptionPlaceholder]:
+    '¿De qué trata este hub?',
+  [BrightHubStrings.CreateHub_TrustTierLabel]: 'Nivel de confianza',
+  [BrightHubStrings.CreateHub_ParentHubLabel]: 'Hub padre (opcional)',
+  [BrightHubStrings.CreateHub_ParentHubNone]: 'Ninguno (hub principal)',
+  [BrightHubStrings.CreateHub_Submit]: 'Crear Hub',
+  [BrightHubStrings.CreateHub_Cancel]: 'Cancelar',
+  [BrightHubStrings.Nav_CreatePost]: 'Nueva publicación',
+  [BrightHubStrings.Nav_Trending]: 'Tendencia',
 };

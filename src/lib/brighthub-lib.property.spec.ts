@@ -290,9 +290,12 @@ describe('BrightHub Text Formatter Property Tests', () => {
           fc.boolean(),
           (input, isBlogPost) => {
             const result = parsePostContent(input, isBlogPost);
-            // Output should not be more than 10x the input length
-            // (accounting for HTML tag expansion)
-            const maxExpectedLength = Math.max(input.length * 10, 100);
+            // Output should not be more than 10x the input length.
+            // Markdown plugins (especially footnotes) can expand very short
+            // inputs like "^[]" into large HTML blocks (~275 chars), so we
+            // use a generous minimum floor to avoid false negatives on
+            // short strings.
+            const maxExpectedLength = Math.max(input.length * 10, 500);
             return result.length <= maxExpectedLength;
           },
         ),

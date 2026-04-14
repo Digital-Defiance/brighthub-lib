@@ -658,14 +658,18 @@ export interface IConnectionService {
    * @throws ConnectionServiceError if hub limit exceeded or name invalid
    * @see Requirements: 30.1, 30.9
    */
-  createHub(ownerId: string, name: string, options?: {
-    slug?: string;
-    description?: string;
-    rules?: string;
-    trustTier?: string;
-    parentHubId?: string;
-    icon?: string;
-  }): Promise<IBaseHub<string>>;
+  createHub(
+    ownerId: string,
+    name: string,
+    options?: {
+      slug?: string;
+      description?: string;
+      rules?: string;
+      trustTier?: string;
+      parentHubId?: string;
+      icon?: string;
+    },
+  ): Promise<IBaseHub<string>>;
 
   /**
    * Delete a hub and all its memberships.
@@ -783,7 +787,11 @@ export interface IConnectionService {
   /**
    * Remove a moderator from a hub (owner only)
    */
-  removeModerator(hubId: string, ownerId: string, userId: string): Promise<void>;
+  removeModerator(
+    hubId: string,
+    ownerId: string,
+    userId: string,
+  ): Promise<void>;
 
   /**
    * Check if a user is a member of a hub
@@ -812,11 +820,7 @@ export interface IConnectionService {
   /**
    * Ban a user from a hub (moderator action)
    */
-  banFromHub(
-    hubId: string,
-    userId: string,
-    moderatorId: string,
-  ): Promise<void>;
+  banFromHub(hubId: string, userId: string, moderatorId: string): Promise<void>;
 
   /**
    * Transfer hub ownership to another user

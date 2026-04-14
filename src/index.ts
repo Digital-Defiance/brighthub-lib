@@ -3,6 +3,7 @@
 // into every consumer. Import them from their sub-paths instead:
 //   import { parsePostContent, ... } from '@brightchain/brighthub-lib/lib/brighthub-lib';
 //   import { parseIconMarkup, ... } from '@brightchain/brighthub-lib/lib/font-awesome';
+export * from './lib/enumeration-translations';
 export * from './lib/enumerations';
 export * from './lib/fontawesome-text-class';
 export * from './lib/i18n';
